@@ -1,25 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="17.699395">
-<testcase classname="Free CRM Login Feature" name="Free CRM Login Test Scenario" time="10.443465">
-<system-out><![CDATA[Given User is alrady on login page..........................................passed
-When Title of Login page is Free CRM........................................passed
-Then user entered credentials "gilbert.baidya.tester@gmail.com" and "simon123".passed
-Then User clicks on Login button............................................passed
-Then User is on Home Page...................................................passed
-And user moves to new contact page..........................................passed
-And user enters contactInfo "Gilbert" and "Baidya" and "CEO"................passed
-Then Close the browser......................................................passed
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0">
+<testcase classname="Deal Data Creation" name="Free CRM create a new deal scenario" time="0">
+<system-out><![CDATA[Given User is already on login page.........................................skipped
+When Title of Login page is Free CRM........................................skipped
+Then user entered credentials username and password.........................skipped
+Then User clicks on Login button............................................skipped
+Then User is on Home Page...................................................skipped
+And user moves to new deal page.............................................skipped
+And user enters deal details................................................skipped
+Then Close the browser......................................................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Free CRM Login Feature" name="Free CRM Login Test Scenario 2" time="7.25593">
-<system-out><![CDATA[Given User is alrady on login page..........................................passed
-When Title of Login page is Free CRM........................................passed
-Then user entered credentials "gilbert.baidya.tester@gmail.com" and "simon123".passed
-Then User clicks on Login button............................................passed
-Then User is on Home Page...................................................passed
-And user moves to new contact page..........................................passed
-And user enters contactInfo "Abul" and "Maal" and "Tester"..................passed
-Then Close the browser......................................................passed
-]]></system-out>
+<testcase classname="Free CRM Login Feature" name="Free CRM Login Test Scenario" time="0">
+<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given User is alrady on login page..........................................undefined
+When Title of Login page is Free CRM........................................skipped
+Then user entered credentials "gilbert.baidya.tester@gmail.com" and "simon123".undefined
+Then User clicks on Login button............................................skipped
+Then User is on Home Page...................................................skipped
+And user moves to new contact page..........................................undefined
+And user enters contactInfo "Gilbert" and "Baidya" and "CEO"................undefined
+Then Close the browser......................................................skipped
+]]></failure>
+</testcase>
+<testcase classname="Free CRM Login Feature" name="Free CRM Login Test Scenario 2" time="0">
+<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given User is alrady on login page..........................................undefined
+When Title of Login page is Free CRM........................................skipped
+Then user entered credentials "gilbert.baidya.tester@gmail.com" and "simon123".undefined
+Then User clicks on Login button............................................skipped
+Then User is on Home Page...................................................skipped
+And user moves to new contact page..........................................undefined
+And user enters contactInfo "Abul" and "Maal" and "Tester"..................undefined
+Then Close the browser......................................................skipped
+]]></failure>
 </testcase>
 </testsuite>

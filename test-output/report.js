@@ -1,4 +1,128 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("deals.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Deal Data Creation",
+  "description": "",
+  "id": "deal-data-creation",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "line": 3,
+  "name": "Free CRM create a new deal scenario",
+  "description": "",
+  "id": "deal-data-creation;free-crm-create-a-new-deal-scenario",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 5,
+  "name": "User is already on login page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 6,
+  "name": "Title of Login page is Free CRM",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "user entered credentials username and password",
+  "rows": [
+    {
+      "cells": [
+        "gilbert.baidya.tester@gmail.com",
+        "simon123"
+      ],
+      "line": 8
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "User clicks on Login button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 11,
+  "name": "User is on Home Page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "user moves to new deal page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 13,
+  "name": "user enters deal details",
+  "rows": [
+    {
+      "cells": [
+        "test deal",
+        "1000",
+        "50",
+        "10"
+      ],
+      "line": 14
+    }
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "Close the browser",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "DealsStepDefinition.user_is_alrady_on_login_page()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "DealsStepDefinition.title_of_Login_page_is_Free_CRM()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "DealsStepDefinition.user_entered_credentials_username_and_password(DataTable)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "DealsStepDefinition.user_clicks_on_Login_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "DealsStepDefinition.user_is_on_Home_Page()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "DealsStepDefinition.user_moves_to_new_deal_page()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "DealsStepDefinition.user_enters_deal_details(DataTable)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "DealsStepDefinition.close_the_browser()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.uri("login.feature");
 formatter.feature({
   "line": 1,
   "name": "Free CRM Login Feature",
@@ -179,85 +303,45 @@ formatter.step({
   "name": "Close the browser",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "LoginStepDefinition.user_is_alrady_on_login_page()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 3377667567,
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.match({
-  "location": "LoginStepDefinition.title_of_Login_page_is_Free_CRM()"
+  "location": "DealsStepDefinition.title_of_Login_page_is_Free_CRM()"
 });
 formatter.result({
-  "duration": 837164965,
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "gilbert.baidya.tester@gmail.com",
-      "offset": 26
-    },
-    {
-      "val": "simon123",
-      "offset": 64
-    }
-  ],
-  "location": "LoginStepDefinition.user_entered_username_And_password(String,String)"
+  "location": "DealsStepDefinition.user_clicks_on_Login_button()"
 });
 formatter.result({
-  "duration": 2386804107,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_clicks_on_Login_button()"
+  "location": "DealsStepDefinition.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 69809471,
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_is_on_Home_Page()"
+  "location": "DealsStepDefinition.close_the_browser()"
 });
 formatter.result({
-  "duration": 32448316,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_moves_to_new_contact_page()"
-});
-formatter.result({
-  "duration": 3006052319,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Gilbert",
-      "offset": 25
-    },
-    {
-      "val": "Baidya",
-      "offset": 39
-    },
-    {
-      "val": "CEO",
-      "offset": 52
-    }
-  ],
-  "location": "LoginStepDefinition.user_enters_contactInfo_and_and(String,String,String)"
-});
-formatter.result({
-  "duration": 635020223,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.close_the_browser()"
-});
-formatter.result({
-  "duration": 98498223,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 22,
@@ -316,84 +400,44 @@ formatter.step({
   "name": "Close the browser",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "LoginStepDefinition.user_is_alrady_on_login_page()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 1831272451,
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.match({
-  "location": "LoginStepDefinition.title_of_Login_page_is_Free_CRM()"
+  "location": "DealsStepDefinition.title_of_Login_page_is_Free_CRM()"
 });
 formatter.result({
-  "duration": 1978360234,
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "gilbert.baidya.tester@gmail.com",
-      "offset": 26
-    },
-    {
-      "val": "simon123",
-      "offset": 64
-    }
-  ],
-  "location": "LoginStepDefinition.user_entered_username_And_password(String,String)"
+  "location": "DealsStepDefinition.user_clicks_on_Login_button()"
 });
 formatter.result({
-  "duration": 335366487,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_clicks_on_Login_button()"
+  "location": "DealsStepDefinition.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 65512861,
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_is_on_Home_Page()"
+  "location": "DealsStepDefinition.close_the_browser()"
 });
 formatter.result({
-  "duration": 9217902,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_moves_to_new_contact_page()"
-});
-formatter.result({
-  "duration": 2309524330,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Abul",
-      "offset": 25
-    },
-    {
-      "val": "Maal",
-      "offset": 36
-    },
-    {
-      "val": "Tester",
-      "offset": 47
-    }
-  ],
-  "location": "LoginStepDefinition.user_enters_contactInfo_and_and(String,String,String)"
-});
-formatter.result({
-  "duration": 609985571,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.close_the_browser()"
-});
-formatter.result({
-  "duration": 116690466,
-  "status": "passed"
+  "status": "skipped"
 });
 });
