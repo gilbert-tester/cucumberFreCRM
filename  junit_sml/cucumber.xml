@@ -1,36 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0">
-<testcase classname="Deal Data Creation" name="Free CRM create a new deal scenario" time="0">
-<system-out><![CDATA[Given User is already on login page.........................................skipped
-When Title of Login page is Free CRM........................................skipped
-Then user entered credentials username and password.........................skipped
-Then User clicks on Login button............................................skipped
-Then User is on Home Page...................................................skipped
-And user moves to new deal page.............................................skipped
-And user enters deal details................................................skipped
-Then Close the browser......................................................skipped
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="0.080736">
+<testcase classname="Free CRM Application Testing" name="Login With correct username and password" time="0.080617">
+<system-out><![CDATA[Given This is invalid login test............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Free CRM Login Feature" name="Free CRM Login Test Scenario" time="0">
-<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given User is alrady on login page..........................................undefined
-When Title of Login page is Free CRM........................................skipped
-Then user entered credentials "gilbert.baidya.tester@gmail.com" and "simon123".undefined
-Then User clicks on Login button............................................skipped
-Then User is on Home Page...................................................skipped
-And user moves to new contact page..........................................undefined
-And user enters contactInfo "Gilbert" and "Baidya" and "CEO"................undefined
-Then Close the browser......................................................skipped
-]]></failure>
+<testcase classname="Free CRM Application Testing" name="Create a tasks" time="0.000025">
+<system-out><![CDATA[Given This is a task test case..............................................passed
+]]></system-out>
 </testcase>
-<testcase classname="Free CRM Login Feature" name="Free CRM Login Test Scenario 2" time="0">
-<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given User is alrady on login page..........................................undefined
-When Title of Login page is Free CRM........................................skipped
-Then user entered credentials "gilbert.baidya.tester@gmail.com" and "simon123".undefined
-Then User clicks on Login button............................................skipped
-Then User is on Home Page...................................................skipped
-And user moves to new contact page..........................................undefined
-And user enters contactInfo "Abul" and "Maal" and "Tester"..................undefined
-Then Close the browser......................................................skipped
-]]></failure>
+<testcase classname="Free CRM Application Testing" name="Varify left panel links" time="0.000022">
+<system-out><![CDATA[Given Clicking on left panel links..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM Application Testing" name="Search a deal" time="0.000026">
+<system-out><![CDATA[Given This is a search deal test............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM Application Testing" name="Search a case" time="0.000024">
+<system-out><![CDATA[Given This is a search case test............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM Application Testing" name="Search an email" time="0.000022">
+<system-out><![CDATA[Given This is a search email test...........................................passed
+]]></system-out>
 </testcase>
 </testsuite>
